@@ -4,7 +4,7 @@ const saudiSchema = new Schema({
   Username: {type:String, /*required:true,*/ default:"مستخدم مجهول الهوية"},
   Email: {type: String, required:true},
   Password: {type:String, required:true},
-  messageG: {type:String, required:true, default:"اكتب وإلا!"},
+  messageG: {type:String, required:true, default:"None"},
   /*messageGs: {type:Object, required:true, default:[
       /*"Admin Of This Chat Website":*//*"Hi, I hope you're send messages carefully without mistakes/problems!, Thank you so much!"
   ]}*/
