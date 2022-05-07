@@ -1,0 +1,135 @@
+body {
+    background-color:#282c34;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:500px;
+}
+  .Name {
+    color:aqua;
+  }
+  .messageG {
+    color:white;
+  }
+  .App {
+    direction:rtl;
+    margin:25px;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*input[type='email'], input[type='password'] {
+    color:darkcyan;
+    background-color:black;
+    border:2px solid #e6b31e;
+    padding:20px;
+    margin:10px;
+    font-size:25px;
+    border-radius:5px;
+  }*/
+  .Login {
+      width:25em;
+      background-color:#1d1f24;
+      padding:50px;
+      border-radius:20px;
+      margin-top:50%;
+  }
+  .Login label {
+    color:aqua;
+    margin:5px;
+  }
+  form {
+    display:flex;
+  }
+  
+  form h2 {
+    font-weight:bold;
+    font-size:20px;
+  }
+  .Login input[type='submit'], .Register input[type='submit'] {
+    padding:10px;
+    margin:5px;
+    font-size:25px;
+    font-weight:bold;
+    font-family:cursive;
+    background: -webkit-linear-gradient(left, rgb(6, 167, 167) 0px,#e6b31e 50px, crimson 250px);
+    border:2px solid aqua;
+    width:300px;
+    border-radius:20px;
+  }
+  /*
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<label for="basic-url" class="form-label">Your vanity URL</label>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+  */
+
+  .Tell_me {
+    /*color:crimson;*/
+    background: -webkit-linear-gradient(left, rgb(6, 167, 167) 0px,#e6b31e 50px, crimson 250px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
