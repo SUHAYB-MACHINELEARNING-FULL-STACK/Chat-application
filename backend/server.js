@@ -42,16 +42,23 @@ app.post('/Register', (req,res)=>{
 })
 
 app.put('/Login', (req,res)=>{
+  console.log(req.body.email)
   Saudi.find({Email:req.body.email, Password:req.body.pass}, (err, account)=>{
     if(err) {
       return res.status(404).json({message:"This account not registered on our DB!"})
     } else {
       try {
-      return res.status(200).json({message:`Login Successfully!`, ...account[0]})
+        if(account.length === 0) {
+          return res.status(404).json({message:"This account not registered on our DB!"})
+        }
       } catch(err) {
-        return res.status(404).json({message:"This account not registered on our DB!"})
+        if(account===null) {
+          return res.status(404).json({message:"This account not registered on our DB!"}) 
+        }
       }
+      return res.status(200).json({message:`Login Successfully!`})
     }
+    return res.status(200).json({message:`Login Successfully!`})
   })
 })
 
