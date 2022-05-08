@@ -72,8 +72,16 @@ form h2 {
   width:100%;
   direction:ltr;
 }
+form .input-group9 {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
 form {
-  width:1000px;
+  display:flex;
+  width:870px;
+  flex-wrap:none;
 }
 .ChatDiv {
   background-color:#1d1f24;
@@ -86,8 +94,12 @@ form {
 .message input[type='text'] {
   width:900px;
   height:50px;
-  border-top-right-radius:0px;
+  border-radius:0px;
+}
+
+.input-group-text {
   border-bottom-right-radius:0px;
+  border-top-right-radius:0px;
 }
 
 .send_message {
